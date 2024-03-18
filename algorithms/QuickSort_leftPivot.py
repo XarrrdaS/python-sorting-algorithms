@@ -18,7 +18,7 @@ def quickSort_leftPivot(array):
             else:
                 smaller.append(i)
         # recursive execution of function in order to divide arrays with smaller and larger
-        # numbers compared to current pivot, as at the beggining if the array is lower than or equal to 1 
+        # numbers compared to current pivot, as at the beggining if the array length is lower than or equal to 1 
         # it will return the exact element
         return quickSort_leftPivot(smaller) + [pivot] + quickSort_leftPivot(larger)
     
