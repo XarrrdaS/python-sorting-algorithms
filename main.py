@@ -1,14 +1,7 @@
-"""
-To run this file issue this command:
-python3 HelloWorld.py
+from algorithms.QuickSort_leftPivot import quickSort_leftPivot
 
-Python as a interpreted language executes code directly without a separate compilation step, 
-translating and running the source code on-the-fly during execution.
-"""
-
-from HelloWorld import HelloWorld
-
-# Checks if the Python script is being run as the main program (not imported as a module)
+#Insertion sort, Shell sort, Selection sort, Heap sort, Quick sort (random pivot, left pivot)
 if __name__ == "__main__":
-    print(HelloWorld())
+    array_quickSortLeftPivot = [2,6,8,10,1,2,1]
+    print(quickSort_leftPivot(array_quickSortLeftPivot))
     
