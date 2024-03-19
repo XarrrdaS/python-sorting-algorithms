@@ -1,5 +1,6 @@
 from algorithms.QuickSort_leftPivot import quickSort_leftPivot
 from algorithms.QuickSort_randomPivot import quickSort_randomPivot
+from algorithms.HeapSort import heapSort
 
 #Insertion sort, Shell sort, Selection sort, Heap sort, Quick sort (random pivot, left pivot)
 if __name__ == "__main__":
@@ -10,3 +11,7 @@ if __name__ == "__main__":
     testArray_quickSortRandomPivot = [6, 5, 4, 6, 7, 3, 4, 6, 7, 4, 111, 12, 0]
     print('\nQuickSort - random pivot:')
     print(quickSort_randomPivot(testArray_quickSortRandomPivot))
+    
+    testArray_heapSort = [12, 11, 13, 5, 6, 7, 32, 5, 4, 3, 2, 0]
+    print('\nHeapSort:')
+    print(heapSort(testArray_heapSort))
