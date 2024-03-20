@@ -1,6 +1,9 @@
 from algorithms.QuickSort_leftPivot import quickSort_leftPivot
 from algorithms.QuickSort_randomPivot import quickSort_randomPivot
 from algorithms.HeapSort import heapSort
+from algorithms.ShellSort import shell_sort
+from algorithms.SelectionSort import selection_sort
+from algorithms.InsertionSort import insertion_sort
 
 #Insertion sort, Shell sort, Selection sort, Heap sort, Quick sort (random pivot, left pivot)
 if __name__ == "__main__":
