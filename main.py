@@ -18,3 +18,15 @@ if __name__ == "__main__":
     testArray_heapSort = [12, 11, 13, 5, 6, 7, 32, 5, 4, 3, 2, 0]
     print('\nHeapSort:')
     print(heapSort(testArray_heapSort))
+
+    testArray_shellsort = [12, 11, 13, 5, 6, 7, 32, 5, 4, 3, 2, 0]
+    print('\nShellSort:')
+    print(heapSort(testArray_shellsort))
+
+    testArray_selectionsort = [12, 11, 13, 5, 6, 7, 32, 5, 4, 3, 2, 0]
+    print('\nSelection_Sort:')
+    print(heapSort(testArray_selectionsort))
+
+    testArray_insertionsort = [12, 11, 13, 5, 6, 7, 32, 5, 4, 3, 2, 0]
+    print('\nInsertion_Sort:')
+    print(heapSort(testArray_insertionsort))
