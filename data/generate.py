@@ -31,11 +31,11 @@ for size in sizes:
     a_shaped_array = generate_a_shaped_array(size)
 
     # Add instance size as the first number and save arrays to files
-    np.savetxt(f'benchmark/random_array_{size:08d}.txt', np.insert(random_array, 0, size), fmt='%d')
-    np.savetxt(f'benchmark/increasing_array_{size:08d}.txt', np.insert(increasing_array, 0, size), fmt='%d')
-    np.savetxt(f'benchmark/decreasing_array_{size:08d}.txt', np.insert(decreasing_array, 0, size), fmt='%d')
-    np.savetxt(f'benchmark/constant_array_{size:08d}.txt', np.insert(constant_array, 0, size), fmt='%d')
-    np.savetxt(f'benchmark/a_shaped_array_{size:08d}.txt', np.insert(a_shaped_array, 0, size), fmt='%d')
+    np.savetxt(f'./benchmark/random_array_{size:08d}.txt', np.insert(random_array, 0, size), fmt='%d')
+    np.savetxt(f'./benchmark/increasing_array_{size:08d}.txt', np.insert(increasing_array, 0, size), fmt='%d')
+    np.savetxt(f'./benchmark/decreasing_array_{size:08d}.txt', np.insert(decreasing_array, 0, size), fmt='%d')
+    np.savetxt(f'./benchmark/constant_array_{size:08d}.txt', np.insert(constant_array, 0, size), fmt='%d')
+    np.savetxt(f'./benchmark/a_shaped_array_{size:08d}.txt', np.insert(a_shaped_array, 0, size), fmt='%d')
 
 
 print("Arrays have been generated and saved to files.")
