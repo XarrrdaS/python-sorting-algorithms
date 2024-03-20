@@ -15,18 +15,18 @@ if __name__ == "__main__":
     print('\nQuickSort - random pivot:')
     print(quickSort_randomPivot(testArray_quickSortRandomPivot))
     
-    testArray_heapSort = [12, 11, 13, 5, 6, 7, 32, 5, 4, 3, 2, 0]
+    testArray_heapSort = [12, 11, 13, 5, 6, 7, 32, 5, 4, 3, 2, 0, 123, 123, 132, 0, 0]
     print('\nHeapSort:')
     print(heapSort(testArray_heapSort))
 
-    testArray_shellsort = [12, 11, 13, 5, 6, 7, 32, 5, 4, 3, 2, 0]
+    testArray_shellsort = [12, 11, 13, 5, 6, 7, 32, 5, 4, 3, 2, 0, 432, 2134]
     print('\nShellSort:')
-    print(heapSort(testArray_shellsort))
+    print(shell_sort(testArray_shellsort))
 
-    testArray_selectionsort = [12, 11, 13, 5, 6, 7, 32, 5, 4, 3, 2, 0]
+    testArray_selectionsort = [12, 11, 13, 5, 6, 7, 32, 5, 4, 3, 2, 0, 124, 123]
     print('\nSelection_Sort:')
-    print(heapSort(testArray_selectionsort))
+    print(selection_sort(testArray_selectionsort))
 
-    testArray_insertionsort = [12, 11, 13, 5, 6, 7, 32, 5, 4, 3, 2, 0]
+    testArray_insertionsort = [12, 11, 13, 5, 6, 7, 32, 5, 4, 3, 2, 0, 9122, 0, 0]
     print('\nInsertion_Sort:')
-    print(heapSort(testArray_insertionsort))
+    print(insertion_sort(testArray_insertionsort))
