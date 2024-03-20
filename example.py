@@ -6,16 +6,6 @@ from algorithms.QuickSort_randomPivot import quickSort_randomPivot
 from algorithms.SelectionSort import selection_sort
 from algorithms.ShellSort import shell_sort
 
-
-def sort_using_algorithm(data, algorithm):
-    # This function takes the algorithm identifier as input
-    # However, it always uses the sorted function in Python
-
-    sorted_data = sorted(data)
-
-    return sorted_data
-
-
 def chooseAlgorithm(data, algorithmNum):
     if algorithmNum == 1:
         insertion_sort(data)
@@ -29,7 +19,6 @@ def chooseAlgorithm(data, algorithmNum):
         quickSort_leftPivot(data)
     if algorithmNum == 6:
         quickSort_randomPivot(data)
-
 
 def main():
     # Command-line arguments: python script.py --algorithm <algorithm_number>
