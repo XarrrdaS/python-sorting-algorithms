@@ -5,10 +5,10 @@ def selection_sort(array):
         min_index = i
         # loop through the array starting from the next element
         for j in range(i + 1, len(array)):
-            # if the current element is less than the minimum element
+            # if the current is less than minimum
             if array[j] < array[min_index]:
-                # set the current element as the minimum element
+                # set current as minimum
                 min_index = j
-        # swap the elements
+        # swap
         array[i], array[min_index] = array[min_index], array[i]
     return array
