@@ -1,14 +1,17 @@
 def shell_sort(array):
-    # define the interval
-    sedgewick = [0] * round(len(array)/2)
-    for s in range(round(len(array)/2)):
-        sedgewick[s] = 4**(s+1) + 3*2**s + 1
-    interval = sedgewick[:-1]
-    # print(interval)
-    # interval = len(array) // 2
-    # loop through the array
-    temp = round(len(array)/2)-1
-    while interval > 0:
+    # define the intervals using Sedgewick's sequence
+    intervals = []
+    k = 0
+    intervals.append(1)
+    while True:
+        interval = 4**(k + 1) + 3 * 2**k + 1
+        if interval >= len(array):
+            break
+        intervals.append(interval)
+        k += 1
+
+    # loop through the intervals in reverse order
+    for interval in reversed(intervals):
         # loop through the array starting from the interval
         for i in range(interval, len(array)):
             # define the current element
@@ -23,10 +26,6 @@ def shell_sort(array):
                 position -= interval
             # set the current element to the position
             array[position] = current
-        # divide the interval by 2
-        temp = temp-1
-        interval = sedgewick[temp]
-        print(interval)
     return array
 
-print(shell_sort([5, 3, 8]))
+print(shell_sort([5, 3, 8, 5, 6, 7, 8]))
